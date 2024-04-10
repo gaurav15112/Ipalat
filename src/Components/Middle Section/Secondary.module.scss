@@ -1,0 +1,66 @@
+@import "../../styles/variables";
+
+.secondary {
+  // border: 5px solid blue;
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  :global .secondary {
+    &__title {
+    // border: 4px solid blue;
+      margin-left: 43px;
+      width: 50%;
+      height: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      h2 {
+        
+        font-weight: 400px;
+        font-size: 4rem;
+        color: #ffffff;
+      }
+      h3 {
+        font-weight: 800px;
+        font-size: 2rem;
+        color: #ffffff;
+      }
+      .btn {
+        color: #d50b27;
+        align-self: flex-end;
+        width: fit-content;
+        // border: 2px solid black;
+        background-color: $secondary-color;
+      }
+    }
+
+    &__second {
+      //  border: 4px solid black;
+       
+       position: relative;
+        width: 1000px;
+
+       margin-left: -246px;
+      margin-top: 2px;
+
+      &__image {
+    
+        position: absolute;
+        left:-135px;
+       height: 1130px;
+        //  border: 2px solid green;
+        width: 1170px; 
+        padding: 3px;
+        // position: relative;
+         top: -130px;
+        //4 right: 50px;
+      }
+      img {
+        padding: 10px;
+        width: 100% !important;
+        height:auto;
+      }
+    }
+  }
+}

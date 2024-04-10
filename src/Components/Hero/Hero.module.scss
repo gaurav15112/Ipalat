@@ -1,0 +1,113 @@
+ @import '../../styles/variables';   
+.hero {
+  display: flex;
+  border: 2px solid blue;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  :global .hero {
+    &__circleparent {
+      // border: 5px solid orangered;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      width: 640px;
+      height: 640px;
+      border-radius: 50%;
+      background-color: $secondary-color;
+
+      &__child {
+        border: 2px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+          // border: 2px solid black;
+        
+          font-size: 20px;
+          font-weight: 900px;
+          color: #d50b27;
+        }
+        h1 {
+          font-family: 'Gilroy-Heavy';
+          font-size: 70px;
+          font-weight: 1000px;
+
+          color: #d50b27;
+        }
+      }
+    }
+
+    &__imageparent {
+      // border: 2px solid black;
+      width: 450px;
+      height: 400px;
+      position: relative;
+
+      &__imagechild {
+        // border: 2px solid yellowgreen;
+        width: 460px;
+
+        overflow: hidden;
+        position: absolute;
+        top: -120px;
+        left: -50px;
+        height: 670px;
+
+        img {
+          width: 100%;
+          height: auto;
+          left: -30px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    height: 575px;
+    :global .hero {
+      &__circleparent {
+        padding: 15px 10px;
+        width: 100px;
+        height: 194px;
+        border-radius: 0;
+        // border: 2px solid black;
+        width: 74%;
+        background-color: #d50b27;
+
+        h4 {
+          color: #ffffff;
+          font-size: 22px;
+
+          text-align: center;
+        }
+
+        h1 {
+          padding: 3px;
+          color: #ffffff;
+          font-size: 33px;
+        }
+      }
+
+      &__imageparent {
+        // border: 2px solid blue;
+        &__imagechild {
+          padding: 14px;
+          height: 336px;
+          top: 13px;
+          width: 230px;
+          margin-left: 144px;
+         
+          // border: 2px solid black;
+          img {
+            
+          }
+        }
+      }
+    }
+  }
+}
