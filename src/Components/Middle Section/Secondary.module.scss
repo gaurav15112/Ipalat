@@ -1,22 +1,19 @@
 @import "../../styles/variables";
 
 .secondary {
-  // border: 5px solid blue;
   display: flex;
   width: 100%;
-  height: 1000px;
+  height: 860px;
+  padding: 20px;
   :global .secondary {
     &__title {
-    // border: 4px solid blue;
-      margin-left: 43px;
-      width: 50%;
-      height: 100%;
-      
+      width: 40%;
+      height: 804px;
+
       display: flex;
       flex-direction: column;
       justify-content: end;
       h2 {
-        
         font-weight: 400px;
         font-size: 4rem;
         color: #ffffff;
@@ -30,36 +27,65 @@
         color: #d50b27;
         align-self: flex-end;
         width: fit-content;
-        // border: 2px solid black;
         background-color: $secondary-color;
       }
     }
 
     &__second {
-      //  border: 4px solid black;
-       
-       position: relative;
-        width: 1000px;
+      width: 55%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
 
-       margin-left: -246px;
-      margin-top: 2px;
-
-      &__image {
-    
-        position: absolute;
-        left:-135px;
-       height: 1130px;
-        //  border: 2px solid green;
-        width: 1170px; 
-        padding: 3px;
-        // position: relative;
-         top: -130px;
-        //4 right: 50px;
-      }
       img {
-        padding: 10px;
         width: 100% !important;
-        height:auto;
+        // transform: rotate(90deg);
+        height: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    // justify-content: start;
+    // align-items: center;
+    :global .secondary {
+      &__title {
+        // border: 2px solid green;
+
+        justify-content: flex-start;
+        width: 100%;
+
+        // width: 40%;
+        // height: 800px;
+
+        // display: flex;
+        // flex-direction: column;
+
+        h2 {
+          font-size: 2.77rem;
+          color: #ffffff;
+        }
+
+        h3 {
+          font-size: 1.8rem;
+        }
+        .btn {
+          align-self: center;
+          font-size: 2.58rem;
+        }
+      }
+
+      &__second {
+        margin-top: 44px;
+        // border: 2px solid blue;
+        width: 100%;
+        img {
+          border: 2px solid vilot;
+        }
       }
     }
   }

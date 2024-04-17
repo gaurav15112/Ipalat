@@ -7,7 +7,7 @@ const Secondary: React.FC = () => {
       <div className={styles.secondary}>
         <div className="secondary__title">
           <h2 >
-            ipalat® <br />
+            ipalat® <br/>
             Die Halspastille
           </h2>
           <br />
@@ -19,18 +19,15 @@ const Secondary: React.FC = () => {
           <br />
           <h2 className="btn">mehr erfahren</h2>
         </div>
-
+ 
         <div className="secondary__second">
-
-          <div className="secondary__second__image">
-          <Image
-            src="/assest/boxWthFlower.png"
-            width={1000}
-            height={1000}
+        <Image
+            src="/assest/boxwithflow.png"
+            width={1200}
+            height={1200}
             alt="picture"
           />
-          </div>
-        </div>
+        </div>  
       </div>
     </>
   );

@@ -1,10 +1,10 @@
- @import '../../styles/variables';   
+@import "../../styles/variables";
 .hero {
   display: flex;
-  border: 2px solid blue;
+  // border: 2px solid blue;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
   :global .hero {
     &__circleparent {
       // border: 5px solid orangered;
@@ -26,13 +26,13 @@
 
         h4 {
           // border: 2px solid black;
-        
+
           font-size: 20px;
           font-weight: 900px;
           color: #d50b27;
         }
         h1 {
-          font-family: 'Gilroy-Heavy';
+          font-family: "Gilroy-Heavy";
           font-size: 70px;
           font-weight: 1000px;
 
@@ -55,7 +55,7 @@
         position: absolute;
         top: -120px;
         left: -50px;
-        height: 670px;
+        height: 665px;
 
         img {
           width: 100%;
@@ -68,28 +68,30 @@
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
-    height: 575px;
+    height: 716px;
     :global .hero {
       &__circleparent {
-        padding: 15px 10px;
-        width: 100px;
-        height: 194px;
+        
+       
+        height: 289px;  
         border-radius: 0;
         // border: 2px solid black;
-        width: 74%;
+        width: 100%;
         background-color: #d50b27;
 
         h4 {
+          padding: 13px;
           color: #ffffff;
-          font-size: 22px;
+          font-size: 1.6rem;
 
           text-align: center;
         }
 
         h1 {
-          padding: 3px;
+          // padding: 3px;
           color: #ffffff;
-          font-size: 33px;
+          line-height: 1;
+          font-size: 3.5rem;
         }
       }
 
@@ -97,15 +99,14 @@
         // border: 2px solid blue;
         &__imagechild {
           padding: 14px;
-          height: 336px;
-          top: 13px;
-          width: 230px;
-          margin-left: 144px;
-         
-          // border: 2px solid black;
-          img {
-            
-          }
+          height: 413px;
+          top: -1px;
+          width: 288px;
+          margin-left: 133px;
+        }
+
+        // border: 2px solid black;
+        img {
         }
       }
     }

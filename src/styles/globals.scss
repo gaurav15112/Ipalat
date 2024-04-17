@@ -1,27 +1,59 @@
+@import "./variables";
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
-body{
-  font-family: 'Gilroy-Regular';
+body {
+  font-family: "Gilroy-Bold";
 }
 .container {
-  background-color: #d50b27;
+  background-color: $primary-color;
   width: 100%;
-  height: 350vh;
+}
+hr {
+  border: none;
+  background-color: white;
+  height: 5px;
+}
+.container_inner {
 
-  hr {
-    background-color: white;
-    height: 5px;
-  }
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.news__smallbg {
+  background-color: $primary-color;
+  height: 70px;
 }
 
+.container_white {
+  background-color: $secondary-color;
+  width: 100%;
+}
+.container_grey{
+  background-color:#808080;
+  
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+  
+}
+.container_red{
+  background-color: $primary-color
+  ;
+  
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+  
+}
 // &_items{
 
 //   width: 230px;
 //   height: 32px;
 //   margin-top: 34px;
 //   margin-left: 640px;
-
