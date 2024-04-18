@@ -38,22 +38,22 @@ const Article = () => {
                   
                    <Image  width={100} height={100} src={'/assest/logo.png'} alt="logo"/>
 
-                 <Image width={50} height={15} src={'/assest/zuckerfrei.png'} alt="logo"/> 
+                 <Image width={65} height={13} src={'/assest/zuckerfrei.png'} alt="logo"/> 
                 </div>
                 <div className="logoimage">
                     <Image width={100} height={100} src={'/assest/logo.png'} alt="logo"/>
 
-                 <Image width={50} height={15} src={'/assest/classic.png'} alt="logo"/> 
+                 <Image width={65} height={13} src={'/assest/classic.png'} alt="logo"/> 
                 </div>
                 <div className="logoimage">
                   <Image width={100} height={100} src={'/assest/logo.png'} alt="logo"/>
 
-                 <Image width={50} height={15} src={'/assest/honigmild.png'} alt="logo"/> 
+                 <Image width={65} height={13} src={'/assest/honigmild.png'} alt="logo"/> 
                 </div>
                 <div className="logoimage">
                   <Image  width={100} height={100} src={'/assest/ipalatlogo.png'} alt="logo"/>
 
-                <Image width={50} height={15} src={'/assest/hydromed.png'} alt="logo"/> 
+                <Image width={65} height={13} src={'/assest/hydromed.png'} alt="logo"/> 
                 </div>
 
               </div>
