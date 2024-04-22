@@ -5,8 +5,6 @@ const News = () => {
   return (
     <>
       <div className={styles.news}>
-        
-
         <div className="news_">
           <NewsCard />
           <NewsCard />

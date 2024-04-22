@@ -84,7 +84,9 @@
         // border: 2px solid blue;
         width: 100%;
         img {
-          border: 2px solid vilot;
+          width: auto!important;
+          height: 100%;
+          // border: 2px solid vilot;
         }
       }
     }

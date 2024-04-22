@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import styles from "./_Faq.module.scss";
-import { title } from "process";
+import Link from "next/link";
+
+interface FaqInterface {
+  question: string;
+  answer: string;
+}
+
+
 const Faqdata = [
   {
-
     question: "Wo kann ich ipalat® Halspastillen kaufen?",
     answer:
       "ipalat® Halspastillen sind in Apotheken erhältlich. Dort bekommst du nicht nur ein qualitativ hochwertiges Produkt, sondern auch kompetente Beratung zu den einzelnen Varianten und Geschmacksrichtungen.",
@@ -42,17 +48,12 @@ const Faqdata = [
   },
 ];
 
-const  Faq: React.FC  = () => {
+const Faq: React.FC = () => {
   const [openQuestion, setOpenQuestion] = useState(null);
- 
-  const handleClick = (question:any) => {
+const faqData:FaqInterface[] = Faqdata;
+  const handleClick = (question: any) => {
     setOpenQuestion(question === openQuestion ? null : question);
   };
-    
-   
-      
-    
-  
 
   return (
     <>
@@ -61,25 +62,28 @@ const  Faq: React.FC  = () => {
           <h2>ipalat®</h2>
         </div>
 
-        <div  className="Faq_cont">
-          {Faqdata.map((item) => {
+        <div className="Faq_cont">
+          {faqData.map((item) => {
             return (
-              <div key={item.question} >
-                <div className="Faq_cont_ques" onClick={()=>handleClick(item.question)}>
+              <div key={item.question}>
+                <div
+                  className="Faq_cont_ques"
+                  onClick={() => handleClick(item.question)}
+                >
                   <h3>{item.question}</h3>
                 </div>
 
                 {openQuestion === item.question && (
                   <div className="Faq_cont_answer">
-                    <p  >{item.answer}</p>
+                    <p>{item.answer}</p>
                     <div className="Faq_cont_answer_line"></div>
                   </div>
                 )}
-                {openQuestion!== item.question &&
+                {openQuestion !== item.question && (
                   <div className="Faq_cont_mehrbtn">
                     <h2>mehr...</h2>
                   </div>
-                }
+                )}
                 <div className="Faq_cont_hr"></div>
               </div>
             );

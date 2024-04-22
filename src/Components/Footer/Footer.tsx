@@ -6,9 +6,10 @@ const Footer = () => {
     <>
       <footer className={styles.Footer}>
         <div className="Footer_cont">
-          <div className="Footeritemonetitle">
+    
+          <div className="Footer_cont_itemonetitle">
             <p>Ein Produkt von</p>
-            <div className="Footeritemonetitle_logo">
+            <div className="Footer_cont_itemonetitle_logo">
               <Image
                 src="/assest/footertemp.png"
                 width={300}
@@ -18,8 +19,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="Footersocial">
-            <div className="Footersocial_insta">
+          <div className="Footer_cont_social">
+            <div className="Footer_cont_social_insta">
               <Image
                 src="/assest/instagramlogo.png"
                 width={100}
@@ -27,7 +28,7 @@ const Footer = () => {
                 alt="picture"
               />
             </div>
-            <div className="Footersocial_linkd">
+            <div className="Footer_cont_social_linkd">
               <Image
                 src="/assest/linkd.png"
                 width={100}
@@ -43,9 +44,7 @@ const Footer = () => {
               <li className="Footer_cont_links">Impressum</li>
               <li className="Footer_cont_links">Datenschutz</li>
             </ul>
-            {/* <div className='Footer_cont_phras_f'></div>
-         <div className='Footer_cont_phras_s'></div>
-         <div  className='Footer_cont_phras_t'></div> */}
+         
           </div>
         </div>
       </footer>

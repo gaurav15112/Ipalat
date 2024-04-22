@@ -49,10 +49,10 @@ export default function Home() {
           <Faq />
         </div>
          
-        <div className="container_red">
+         <div className="container_red">
         <div className="container_inner">
           <Footer />
-        </div>
+        </div> 
           </div>
       </div>
     </>
